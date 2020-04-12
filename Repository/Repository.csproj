@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200411184728_CreateUserAndUserAuth.cs" />
+    <Compile Remove="Migrations\20200411184728_CreateUserAndUserAuth.Designer.cs" />
+    <Compile Remove="Migrations\20200411185039_CreateUserAndUserAuth.cs" />
+    <Compile Remove="Migrations\20200411185039_CreateUserAndUserAuth.Designer.cs" />
+    <Compile Remove="Migrations\20200411185624_CreateUserAndUserAuth.cs" />
+    <Compile Remove="Migrations\20200411185624_CreateUserAndUserAuth.Designer.cs" />
+    <Compile Remove="Migrations\20200411190019_CreateUserAndUserAuth.cs" />
+    <Compile Remove="Migrations\20200411190019_CreateUserAndUserAuth.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Seeds\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
